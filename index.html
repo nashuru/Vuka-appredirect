@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to the app store...</p>
+
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor;
+
+    if (/iPad|iPhone|iPod/.test(userAgent)) {
+      window.location.href = "https://apps.apple.com/in/app/vuka-investments/id6759642208";
+    } else if (/android/i.test(userAgent)) {
+      window.location.href = "https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.vuka.app&data=05%7C02%7CCaleb.Lenachuru%40amsl-africa.com%7C844d09e927a74afc779708ded02f0925%7C6a949c50e5284c9a9b4e57ec2078a969%7C0%7C0%7C639177097592738354%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=U6u%2B6ESjPqz747LfxUN8oqOPLb65OiUbeYtHu7oLUDg%3D&reserved=0";
+    } else {
+      window.location.href = "https://yourwebsite.com"; // desktop fallback
+    }
+  </script>
+</body>
+</html>
